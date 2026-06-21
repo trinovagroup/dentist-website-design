@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — Lumio Dental</title>
+<meta name="description" content="Book an appointment at Lumio Dental, find our opening hours, address, and emergency contact information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo">Lumio<span class="dot">•</span>Dental</a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Treatments</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <span class="nav-phone">+31 10 123 4567</span>
+        <a href="contact.html" class="btn btn-primary">Book a visit</a>
+      </div>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's get you booked in.</h1>
+      <p class="hero-sub">Fill out the form and we'll confirm within one business day, or
+        call us directly if it's urgent.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section-pad contact-section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap reveal">
+        <h2>Request an appointment</h2>
+        <form class="contact-form" id="booking-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="reason">Reason for visit</label>
+              <select id="reason" name="reason">
+                <option>Routine checkup</option>
+                <option>Tooth pain / urgent</option>
+                <option>Whitening</option>
+                <option>Implants</option>
+                <option>Clear aligners</option>
+                <option>Child's first visit</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="patient-type">New or existing patient</label>
+              <select id="patient-type" name="patient-type">
+                <option>New patient</option>
+                <option>Existing patient</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="notes">Anything we should know? (optional)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="E.g. preferred days, dental anxiety, specific concerns..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">Send request</button>
+          <p class="form-note" id="form-confirmation" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <div class="info-block">
+          <h4>Call us directly</h4>
+          <a href="tel:+31101234567" class="info-link-lg">+31 10 123 4567</a>
+        </div>
+        <div class="info-block">
+          <h4>Visit us</h4>
+          <p>Witte de Withstraat 24<br>3012 BR Rotterdam<br>Netherlands</p>
+        </div>
+        <div class="info-block" id="hours">
+          <h4>Opening hours</h4>
+          <ul class="hours-list">
+            <li><span>Monday</span><span>08:00–17:00</span></li>
+            <li><span>Tuesday</span><span>08:00–20:30</span></li>
+            <li><span>Wednesday</span><span>08:00–17:00</span></li>
+            <li><span>Thursday</span><span>07:00–17:00</span></li>
+            <li><span>Friday</span><span>08:00–17:00</span></li>
+            <li><span>Weekend</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="info-block emergency-block">
+          <h4>Dental emergency?</h4>
+          <p>If you're in pain outside opening hours, call the regional emergency dental
+            line for urgent care: <strong>0900-8602</strong>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="map-placeholder" role="img" aria-label="Map showing Lumio Dental location at Witte de Withstraat 24, Rotterdam">
+      <svg viewBox="0 0 1180 300" preserveAspectRatio="none" class="map-svg">
+        <rect width="1180" height="300" fill="var(--panel)"/>
+        <path d="M0,180 C 200,140 380,220 620,170 C 860,120 1000,200 1180,160" stroke="var(--line)" stroke-width="3" fill="none"/>
+        <path d="M0,90 C 260,60 460,120 720,80 C 920,50 1040,100 1180,70" stroke="var(--line)" stroke-width="2" fill="none"/>
+        <circle cx="610" cy="150" r="9" fill="var(--coral)"/>
+        <circle cx="610" cy="150" r="18" fill="var(--coral)" opacity="0.18"/>
+      </svg>
+      <div class="map-label">
+        <strong>Lumio Dental</strong>
+        <span>Witte de Withstraat 24, Rotterdam</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ anchor target (mirrors services FAQ for convenience) -->
+  <section id="faq" class="section-pad bg-panel">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Before you book</p>
+        <h2>Quick answers.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">How far ahead should I book a routine checkup?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Most patients get a slot within a week. If you have a specific day or
+            time in mind, mention it in the form notes and we'll do our best to match it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What should I bring to my first appointment?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>A photo ID, your insurance card if you have supplementary dental
+            coverage, and a list of any current medications.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is parking available nearby?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>There are 8 spaces directly outside, plus metered street parking
+            along Witte de Withstraat. A tram stop is a 5-minute walk away.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Lumio Dental</div>
+        <p>Calm, modern dental care in the heart of Rotterdam. New patients always welcome.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Treatments</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="contact.html#faq">FAQ</a></li>
+          <li><a href="contact.html#hours">Opening hours</a></li>
+          <li><a href="contact.html">Emergency care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit us</h4>
+        <ul>
+          <li>Witte de Withstraat 24<br>3012 BR Rotterdam</li>
+          <li><a href="tel:+31101234567">+31 10 123 4567</a></li>
+          <li><a href="mailto:hello@lumiodental.nl">hello@lumiodental.nl</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lumio Dental. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact-form.js"></script>
+</body>
+</html>
